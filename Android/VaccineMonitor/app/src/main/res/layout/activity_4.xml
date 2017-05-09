@@ -1,0 +1,122 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/im11">
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="90dp"
+    android:layout_height="25dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignTop="@+id/textView1"
+    android:text="Set"
+    android:background="@drawable/stroke"
+    android:textColor="#FFFFFF"/>
+
+<EditText
+    android:id="@+id/editText1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/textView1"
+    android:layout_toRightOf="@+id/textView1"
+    android:ems="10"
+    android:inputType="numberDecimal"
+    android:width="140dp"
+    >
+
+    <requestFocus />
+</EditText>
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="14dp"
+    android:layout_marginTop="82dp"
+    android:text="Temperature"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView2"
+        android:text="Set"
+        android:background="@drawable/stroke"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:width="140dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_centerHorizontal="true">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="56dp"
+        android:text="Brightness"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dp"
+        android:layout_below="@+id/editText1"
+        android:layout_toStartOf="@+id/editText2"
+        android:textStyle="bold" />
+
+
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView3"
+        android:text="Set"
+        android:background="@drawable/stroke"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:width="140dp"
+        android:layout_alignTop="@+id/button3"
+        android:layout_centerHorizontal="true">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="66dp"
+        android:text="Insulation"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/editText2"
+        android:layout_alignEnd="@+id/textView2"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

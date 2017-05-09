@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im11">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout2">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TableRow android:layout_marginTop="20dip"
+                android:id="@+id/tr"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Start Date   :"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dip"
+                    ></TextView>
+                <EditText
+                    android:id="@+id/sdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+
+                    android:ems="10"
+                    android:inputType="date" >
+
+                </EditText>
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@+id/sdate"
+                    android:layout_toRightOf="@+id/sdate"
+                    android:cropToPadding="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/calendar"
+                    android:onClick="selectDate"
+                    android:contentDescription="@string/selectdate"
+
+                    />
+            </TableRow>
+            <TableRow android:layout_marginTop="20dip"
+                android:id="@+id/tr2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="End Date   :"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dip"
+                    ></TextView>
+                <EditText
+                    android:id="@+id/edate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+
+                    android:ems="10"
+                    android:inputType="date" >
+
+                </EditText>
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@+id/edate"
+                    android:layout_toRightOf="@+id/edate"
+                    android:cropToPadding="true"
+                    android:layout_weight="1"
+                    android:onClick="selectDateE"
+                    android:background="@drawable/calendar"
+                    android:contentDescription="@string/selectdate"
+
+                    />
+            </TableRow>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:id="@+id/temprature"
+                android:onClick="itemClicked"
+                android:layout_weight="0.07" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brightness"
+                android:id="@+id/brightness"
+                android:onClick="itemClicked"
+                android:layout_weight="0.07" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insulation"
+                android:id="@+id/insulation"
+                android:onClick="itemClicked"
+                android:layout_weight="0.07" />
+
+
+
+        </TableLayout>
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        android:onClick="onConnectClicked"
+        android:background="@drawable/stroke"
+        android:id="@+id/find"
+        android:layout_weight="0.07"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

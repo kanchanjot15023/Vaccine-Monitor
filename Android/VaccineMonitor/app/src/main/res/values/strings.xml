@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Vaccine Monitor</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="none_paired">no device paired!</string>
+    <string name="title_activity_4">Activity4</string>
+    <string name="signed_in_fmt">signed_in_fmt</string>
+    <string name="error_null_person">error_null_person</string>
+    <string name="signing_in">signing_in</string>
+
+    <string name="selectdate">selectdate</string>
+
+</resources>

@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+    maven() {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.example.pardeepkaur.vaccinemoniter1"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.google.android.gms:play-services:8.1.0'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:design:23.0.1'
+    compile 'com.google.android.gms:play-services-maps:8.1.0'
+    compile 'com.google.android.gms:play-services-plus:8.1.0'
+
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile ('com.github.worker8:tourguide:1.0.13-SNAPSHOT@aar') {
+        transitive = true
+    }
+
+    // UiAutomatorTesting
+    androidTestCompile 'com.android.support.test:runner:0.2'
+    androidTestCompile 'com.android.support.test:rules:0.2'
+    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.0'
+    androidTestCompile 'com.android.support:support-annotations:23.0.1'
+    compile files('libs/opencsv-2.3.jar')
+}
